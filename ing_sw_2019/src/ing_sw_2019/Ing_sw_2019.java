@@ -14,7 +14,13 @@ public class Ing_sw_2019 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hooooooooooooooooooooooo");
+        System.out.println(factorial(5));
     }
-    
+    static int factorial(int numero){
+          if ( numero <= 1 ) {
+              return 1;
+          } else {
+              return numero*factorial(numero-1);
+          }
+     }
 }
